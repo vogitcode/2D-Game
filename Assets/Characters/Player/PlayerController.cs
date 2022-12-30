@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("swordAttack");
     }
 
-    void SwordAttack()
+    public void SwordAttack()
     {
         LockMovement();
 
