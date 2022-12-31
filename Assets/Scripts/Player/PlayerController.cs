@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public int maxHealth = 10;
-    public int currentHealth;
     public HealthBar healthBar;
 
     public float moveSpeed = 1f;
@@ -25,9 +23,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -40,7 +35,7 @@ public class PlayerController : MonoBehaviour
             TakeDamage(1);
         }
 
-        if (currentHealth <= 0)
+        if (healthBar.GetHealth() <= 0)
         {
             Die();
             LockMovement();
@@ -49,15 +44,7 @@ public class PlayerController : MonoBehaviour
 
     void TakeDamage(int damage)
     {
-        if (currentHealth > 0)
-        {
-            currentHealth -= damage;
-        }
-        else
-        {
-            currentHealth = 0;
-        }
-        healthBar.SetHealth(currentHealth);
+        healthBar.Damaged(damage);
     }
 
     private void FixedUpdate()
