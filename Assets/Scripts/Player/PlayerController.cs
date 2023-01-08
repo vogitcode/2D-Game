@@ -28,25 +28,6 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(1);
-        }
-
-        if (healthBar.GetHealth() <= 0)
-        {
-            Die();
-            LockMovement();
-        }
-    }
-
-    void TakeDamage(int damage)
-    {
-        healthBar.Damaged(damage);
-    }
-
     private void FixedUpdate()
     {
         if (canMove)
@@ -80,6 +61,12 @@ public class PlayerController : MonoBehaviour
             {
                 spriteRenderer.flipX = true;
             }
+        }
+
+        if (healthBar.GetHealth() <= 0)
+        {
+            Die();
+            LockMovement();
         }
     }
 
