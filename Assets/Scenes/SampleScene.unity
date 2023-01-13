@@ -47315,6 +47315,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945297095}
   m_CullTransparentMesh: 1
+--- !u!1 &2021021428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5386931413550365525, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
+  m_PrefabInstance: {fileID: 6982010670603248380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2021021434
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021021428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3052935934827085614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1959081118802092174, guid: eba2f599a0a7af04cbd74271b046ef27, type: 3}
@@ -47369,6 +47394,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1959081118802092174, guid: eba2f599a0a7af04cbd74271b046ef27, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959081118802092176, guid: eba2f599a0a7af04cbd74271b046ef27, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1959081118802092178, guid: eba2f599a0a7af04cbd74271b046ef27, type: 3}
@@ -47448,6 +47477,26 @@ PrefabInstance:
     - target: {fileID: 5386931413550365525, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254965068365359323, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
+      propertyPath: m_Size.x
+      value: 0.13440278
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254965068365359323, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15024464
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254965068365359323, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0045483736
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254965068365359323, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.024921536
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254965068365359323, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8917140164538394832, guid: 590dc60a11b995248b7bb1c37ea1efa9, type: 3}
       propertyPath: m_RootOrder
